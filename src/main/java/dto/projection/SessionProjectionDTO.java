@@ -2,6 +2,7 @@ package dto.projection;
 
 import lombok.Builder;
 import lombok.Data;
+import model.SessionStatus;
 import model.SessionType;
 
 import java.time.OffsetDateTime;
@@ -16,7 +17,7 @@ public class SessionProjectionDTO {
     private String status;
     private SessionType sessionType;
     private VenueDetailsInfo venueDetails;
-    // ✅ Updated to use the new, fully denormalized seating map structure
+    private SessionStatus sessionStatus;
     private SeatingMapProjectionDTO layoutData;
 
 
