@@ -15,11 +15,15 @@ public class SessionSeatingMapDTO {
     private Layout layout;
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Layout {
         private List<Block> blocks;
     }
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Block {
         private String id;
         private String name;
@@ -35,6 +39,8 @@ public class SessionSeatingMapDTO {
     }
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Row {
         private String id;
         private String label;
@@ -42,6 +48,8 @@ public class SessionSeatingMapDTO {
     }
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Seat {
         private String id;
         private String label;
@@ -50,6 +58,8 @@ public class SessionSeatingMapDTO {
     }
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Position {
         private Double x;
         private Double y;

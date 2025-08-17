@@ -27,6 +27,8 @@ public class EventProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class OrganizationInfo {
         private UUID id;
         private String name;

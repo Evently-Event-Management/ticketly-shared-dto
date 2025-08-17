@@ -27,6 +27,8 @@ public class SessionProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class VenueDetailsInfo {
         private String name;
         private String address;
@@ -36,6 +38,8 @@ public class SessionProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class GeoJsonPoint {
         private final String type = "Point";
         private double[] coordinates; // [longitude, latitude]

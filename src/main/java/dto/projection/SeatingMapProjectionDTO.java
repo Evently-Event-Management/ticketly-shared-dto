@@ -18,12 +18,16 @@ public class SeatingMapProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class LayoutInfo {
         private List<BlockInfo> blocks;
     }
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class BlockInfo {
         private String id;
         private String name;
@@ -38,6 +42,8 @@ public class SeatingMapProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class RowInfo {
         private String id;
         private String label;
@@ -46,6 +52,8 @@ public class SeatingMapProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class SeatInfo {
         private String id;
         private String label;
@@ -55,6 +63,8 @@ public class SeatingMapProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class PositionInfo {
         private Double x;
         private Double y;
