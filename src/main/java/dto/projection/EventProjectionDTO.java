@@ -37,6 +37,8 @@ public class EventProjectionDTO {
 
     @Data
     @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class CategoryInfo {
         private UUID id;
         private String name;
