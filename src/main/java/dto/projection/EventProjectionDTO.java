@@ -1,7 +1,9 @@
 package dto.projection;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.EventStatus;
 
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.UUID;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class EventProjectionDTO {
     private UUID id;
     private String title;

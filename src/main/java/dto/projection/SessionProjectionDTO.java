@@ -1,7 +1,9 @@
 package dto.projection;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.SessionStatus;
 import model.SessionType;
 
@@ -10,6 +12,8 @@ import java.util.UUID;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class SessionProjectionDTO {
     private UUID id;
     private OffsetDateTime startTime;

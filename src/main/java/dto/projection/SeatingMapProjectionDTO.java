@@ -1,13 +1,17 @@
 package dto.projection;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.SeatStatus;
 
 import java.util.List;
 
 @Builder
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SeatingMapProjectionDTO {
     private String name;
     private LayoutInfo layout;
