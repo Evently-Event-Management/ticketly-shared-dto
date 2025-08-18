@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import model.SessionStatus;
 import model.SessionType;
-import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
@@ -34,6 +33,7 @@ public class SessionProjectionDTO {
         private String name;
         private String address;
         private String onlineLink;
-        private GeoJsonPoint location;
+        private Double latitude;
+        private Double longitude;
     }
 }
