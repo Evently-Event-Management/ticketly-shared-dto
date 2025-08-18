@@ -6,7 +6,7 @@
 
     <groupId>com.ticketly</groupId>
     <artifactId>ticketly-shared-dtos</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.8-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -33,6 +33,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+            <version>4.0.0-M1</version>
         </dependency>
     </dependencies>
 </project>
