@@ -18,7 +18,6 @@ public class SessionProjectionDTO {
     private UUID id;
     private OffsetDateTime startTime;
     private OffsetDateTime endTime;
-    private String status;
     private SessionType sessionType;
     private VenueDetailsInfo venueDetails;
     private SessionStatus sessionStatus;
