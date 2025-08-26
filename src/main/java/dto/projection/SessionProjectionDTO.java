@@ -22,6 +22,7 @@ public class SessionProjectionDTO {
     private VenueDetailsInfo venueDetails;
     private SessionStatus sessionStatus;
     private SeatingMapProjectionDTO layoutData;
+    private OffsetDateTime salesStartTime;
 
 
     @Data
