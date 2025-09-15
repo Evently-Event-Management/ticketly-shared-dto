@@ -33,6 +33,7 @@ public class EventProjectionDTO {
         private UUID id;
         private String name;
         private String logoUrl;
+        private String userId;
     }
 
     @Data
