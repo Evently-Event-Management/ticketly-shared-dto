@@ -11,7 +11,7 @@ import model.DiscountType;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BogoDiscountParamsProjectionDTO implements DiscountParametersDTO {
+public class BogoDiscountParamsProjectionDTO implements DiscountParametersProjectionDTO {
     private DiscountType type;
     private int buyQuantity;
     private int getQuantity;

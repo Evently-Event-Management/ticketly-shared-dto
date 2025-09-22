@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PercentageDiscountParamsProjectionDTO implements DiscountParametersDTO {
+public class PercentageDiscountParamsProjectionDTO implements DiscountParametersProjectionDTO {
     private DiscountType type;
     private BigDecimal percentage;
 }
