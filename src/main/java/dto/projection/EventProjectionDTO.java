@@ -24,6 +24,7 @@ public class EventProjectionDTO {
     private CategoryInfo category;
     private List<TierInfo> tiers; // Keep this for a summary view of all available tiers
     private List<SessionProjectionDTO> sessions;
+    private List<DiscountProjectionDTO> discounts;
 
     @Data
     @Builder
