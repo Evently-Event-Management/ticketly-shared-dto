@@ -9,10 +9,10 @@ import model.DiscountType;
  */
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type", include = JsonTypeInfo.As.EXISTING_PROPERTY, visible = true)
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = PercentageDiscountParamsProjectionDTO.class, name = "PERCENTAGE"),
-        @JsonSubTypes.Type(value = FlatOffDiscountParamsProjectionDTO.class, name = "FLAT_OFF"),
-        @JsonSubTypes.Type(value = BogoDiscountParamsProjectionDTO.class, name = "BUY_N_GET_N_FREE"),
+        @JsonSubTypes.Type(value = PercentageDiscountParamsDTO.class, name = "PERCENTAGE"),
+        @JsonSubTypes.Type(value = FlatOffDiscountParamsDTO.class, name = "FLAT_OFF"),
+        @JsonSubTypes.Type(value = BogoDiscountParamsDTO.class, name = "BUY_N_GET_N_FREE"),
 })
-public interface DiscountParametersProjectionDTO {
+public interface DiscountParametersDTO {
     DiscountType getType();
 }

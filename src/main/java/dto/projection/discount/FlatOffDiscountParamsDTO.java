@@ -8,12 +8,13 @@ import model.DiscountType;
 import java.math.BigDecimal;
 
 /**
- * DTO for percentage-based discount parameters.
+ * DTO for flat amount discount parameters.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PercentageDiscountParamsProjectionDTO implements DiscountParametersProjectionDTO {
+public class FlatOffDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
-    private BigDecimal percentage;
+    private BigDecimal amount;
+    private String currency;
 }

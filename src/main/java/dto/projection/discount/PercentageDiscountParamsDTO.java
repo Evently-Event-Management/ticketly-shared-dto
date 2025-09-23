@@ -5,14 +5,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import model.DiscountType;
 
+import java.math.BigDecimal;
+
 /**
- * DTO for "Buy N, Get N Free" discount parameters.
+ * DTO for percentage-based discount parameters.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BogoDiscountParamsProjectionDTO implements DiscountParametersProjectionDTO {
+public class PercentageDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
-    private int buyQuantity;
-    private int getQuantity;
+    private BigDecimal percentage;
 }

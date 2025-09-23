@@ -1,6 +1,6 @@
 package dto.projection;
 
-import dto.projection.discount.DiscountParametersProjectionDTO;
+import dto.projection.discount.DiscountParametersDTO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +17,7 @@ import java.util.UUID;
 public class DiscountProjectionDTO {
     private UUID id;
     private String code;
-    private DiscountParametersProjectionDTO parameters;
+    private DiscountParametersDTO parameters;
     private Integer maxUsage;
     private Integer currentUsage;
     private boolean isActive;

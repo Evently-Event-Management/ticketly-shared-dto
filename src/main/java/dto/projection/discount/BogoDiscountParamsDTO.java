@@ -5,16 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import model.DiscountType;
 
-import java.math.BigDecimal;
-
 /**
- * DTO for flat amount discount parameters.
+ * DTO for "Buy N, Get N Free" discount parameters.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FlatOffDiscountParamsProjectionDTO implements DiscountParametersProjectionDTO {
+public class BogoDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
-    private BigDecimal amount;
-    private String currency;
+    private int buyQuantity;
+    private int getQuantity;
 }
