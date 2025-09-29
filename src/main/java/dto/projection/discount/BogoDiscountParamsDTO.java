@@ -15,4 +15,5 @@ public class BogoDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
     private int buyQuantity;
     private int getQuantity;
+
 }

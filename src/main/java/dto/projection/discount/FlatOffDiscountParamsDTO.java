@@ -17,4 +17,5 @@ public class FlatOffDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
     private BigDecimal amount;
     private String currency;
+    private BigDecimal minSpend;
 }

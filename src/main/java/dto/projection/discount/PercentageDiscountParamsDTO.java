@@ -16,4 +16,6 @@ import java.math.BigDecimal;
 public class PercentageDiscountParamsDTO implements DiscountParametersDTO {
     private DiscountType type;
     private BigDecimal percentage;
+    private BigDecimal minSpend;
+    private BigDecimal maxDiscount;
 }
