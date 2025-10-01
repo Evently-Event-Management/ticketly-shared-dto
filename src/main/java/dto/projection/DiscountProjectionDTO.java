@@ -24,6 +24,6 @@ public class DiscountProjectionDTO {
     private boolean isPublic;
     private OffsetDateTime activeFrom;
     private OffsetDateTime expiresAt;
-    private List<UUID> applicableTierIds;
+    private List<TierInfo> applicableTiers;
     private List<UUID> applicableSessionIds;
 }
