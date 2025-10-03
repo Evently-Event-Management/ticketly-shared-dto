@@ -24,6 +24,6 @@ public class CreateOrderRequest {
     @NotNull
     private UUID session_id;
     @NotEmpty
-    private List<String> seat_ids;
-    private String discount_id;
+    private List<UUID> seat_ids;
+    private UUID discount_id;
 }
